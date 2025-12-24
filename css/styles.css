@@ -86,10 +86,17 @@ img {
 /*=============== HOME ===============*/
 .home__data {
   display: flex;
-  flex-direction: column;
-  column-gap: 50px;
+  position: absolute;
   padding-top: 439px;
   padding-left: 162px;
+  column-gap: 136px;
+  z-index: 1;
+}
+
+.home__data_left {
+  display: flex;
+  flex-direction: column;
+  column-gap: 50px;
 }
 
 .home__title {
@@ -103,6 +110,7 @@ img {
 .home__title_mini {
   display: flex;
   padding-top: 50px;
+  padding-left: 162px;
 }
 
 .home__title_mini_line {
