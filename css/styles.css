@@ -82,3 +82,36 @@ img {
   width: 30px;
   margin-top: 8px;
 }
+
+/*=============== HOME ===============*/
+.home__data {
+  display: flex;
+  flex-direction: column;
+  column-gap: 50px;
+}
+
+.home__title {
+  padding-top: 439px;
+  padding-left: 162px;
+  font-weight: var(--font-regular);
+  font-size: var(--big-font-size);
+  letter-spacing: 3%;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+.home__title_mini {
+  display: flex;
+}
+
+.home__title_mini_line {
+  width: 130px;
+  color: var(--first-color);
+}
+
+.home__title_mini_text {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: var(--font-small);
+  font-size: var(--smaller-font-size);
+  line-height: 100%;
+}
