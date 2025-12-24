@@ -88,11 +88,11 @@ img {
   display: flex;
   flex-direction: column;
   column-gap: 50px;
+  padding-top: 439px;
+  padding-left: 162px;
 }
 
 .home__title {
-  padding-top: 439px;
-  padding-left: 162px;
   font-weight: var(--font-regular);
   font-size: var(--big-font-size);
   letter-spacing: 3%;
@@ -102,11 +102,12 @@ img {
 
 .home__title_mini {
   display: flex;
+  padding-top: 50px;
 }
 
 .home__title_mini_line {
-  width: 130px;
   color: var(--first-color);
+  width: 130px;
 }
 
 .home__title_mini_text {
@@ -114,4 +115,5 @@ img {
   font-weight: var(--font-small);
   font-size: var(--smaller-font-size);
   line-height: 100%;
+  letter-spacing: 0%;
 }
