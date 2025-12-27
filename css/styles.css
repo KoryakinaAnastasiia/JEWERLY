@@ -106,8 +106,9 @@ img {
 }
 
 .home__title_mini_line {
-  color: var(--first-color);
+  background-color: var(--first-color);
   width: 130px;
+  height: 1px;
 }
 
 .home__title_mini_text {
