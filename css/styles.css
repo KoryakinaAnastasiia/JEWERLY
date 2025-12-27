@@ -32,6 +32,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  z-index: 1;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -84,23 +85,11 @@ img {
 }
 
 /*=============== HOME ===============*/
-.home grid section {
-  position: absolute;
-}
-
 .home__data {
-  position: absolute;
   display: flex;
+  column-gap: 50px;
   padding-top: 439px;
   padding-left: 162px;
-  column-gap: 136px;
-  z-index: 1;
-}
-
-.home__data_left {
-  display: flex;
-  flex-direction: column;
-  column-gap: 50px;
 }
 
 .home__title {
@@ -114,8 +103,6 @@ img {
 .home__title_mini {
   display: flex;
   padding-top: 50px;
-  padding-left: 162px;
-  column-gap: 38px;
 }
 
 .home__title_mini_line {
@@ -132,38 +119,8 @@ img {
 }
 
 .home__footer {
-  padding: 281px 162px 60px 162px;
   display: flex;
   justify-content: space-between;
-}
-
-.home__footer_lang_ru {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.home__footer_lang_en {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.home__footer_info {
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.home__footer_info_name {
-  font-family: "Futura PT", sans-serif;
-  font-weight: var(--font-regular);
-  color: var(--text-color-white);
-  font-size: var(--small-font-size);
-  letter-spacing: 5%;
-  vertical-align: middle;
-}
-
-.home__footer_info_content {
-  font-family: "Futura PT", sans-serif;
-  font-weight: var(--font-small);
-  color: var(--text-color-transparent);
+  padding-top: 281px;
+  padding-left: 162px;
 }
