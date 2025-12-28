@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/variables.css" />
@@ -19,51 +14,29 @@
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-      <nav class="nav_container">
+      <nav class="nav__container">
         <img src="./img/LOGO.svg" alt="image" />
-        <ul class="nav__link">
-          <img src="./img/like.svg" alt="image" />
-          <img src="./img/people.svg" alt="image" />
-          <img src="./img/lock.svg" alt="image" />
-        </ul>
-        <!--Toggle button-->
-        <div class="nav__toggle" id="nav-toggle">
-          <button class="nav__togle_button"></button>
-          <button class="nav__togle_button"></button>
-          <button class="nav__togle_button"></button>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <button class="nav__list_like">
+              <img src="./img/like.svg" alt="image" />
+            </button>
+            <button class="nav__list_people">
+              <img src="./img/people.svg" alt="image" />
+            </button>
+            <button class="nav__list_basket">
+              <img src="./img/lock.svg" alt="image" />
+            </button>
+          </ul>
+          <div class="nav__togle">
+            <button class="nav__togle_button"></button>
+            <button class="nav__togle_button"></button>
+            <button class="nav__togle_button"></button>
+          </div>
         </div>
       </nav>
+      <div class="header__bode"></div>
+      <div class="header__footer"></div>
     </header>
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home grid section" id="home">
-        <div class="home__data">
-          <div class="home__data_left">
-            <h1 class="home__title">HIGH JEWELRY</h1>
-
-            <div class="home__title_mini">
-              <h4 class="home__title_mini_line"></h4>
-              <div class="home__title_mini_text">Смотреть коллекцию</div>
-            </div>
-          </div>
-
-          <img src="./img/ring.png" alt="image" class="home__ring" />
-        </div>
-
-        <div class="home__footer">
-          <div class="home__footer_lang">
-            <button class="home__footer_lang_ru">RU</button>
-            <button class="home__footer_lang_en">EN</button>
-          </div>
-          <div class="home__footer_info">
-            <h4 class="home__footer_info_name">КОЛЬЦО TRINITY, Cartier</h4>
-            <h3 class="home__footer_info_content">Белое золото, бриллианты</h4>
-            <h4 class="home__footer_info_price">498 000 ₽</h4>  
-          </div>
-        </div>
-      </section>
-      
-    </main>
   </body>
 </html>
