@@ -1,0 +1,23 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 60px;
+
+  /*========== Colors ==========*/
+  --first-color: rgba(39, 39, 39, 1);
+  --text-color-white: rgba(255, 255, 255, 1);
+  --text-color-orange: rgba(239, 197, 139, 1);
+  --text-color-transparent: rgba(149, 149, 149, 1);
+
+  /*========== Font and typography ==========*/
+  --body-font-big: "Forum", sans-serif;
+  --body-font-small: "Segoe UI", sans-serif;
+  --big-font-size: 64px;
+  --normal-font-size: 48px;
+  --small-font-size: 16px;
+  --smaller-font-size: 18px;
+  --transparent-font-size: 22px;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-small: 300;
+}
