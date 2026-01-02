@@ -29,22 +29,24 @@
 .nav__menu {
   display: flex;
   align-items: center;
+  gap: 80px;
 }
 
 .nav__list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
-.nav__togle {
-  padding-left: 80px;
+.nav__togle_button {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.nav__togle_button {
+.nav__togle_line {
   width: 30px;
+  height: 1px;
+  background-color: var(--text-color-white);
 }
 
 .header__name {
