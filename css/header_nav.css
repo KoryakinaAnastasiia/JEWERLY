@@ -56,7 +56,7 @@
 
 .header__body {
   display: flex;
-  gap: 94px;
+  justify-content: space-evenly;
 }
 
 .header__body_text {
@@ -99,4 +99,34 @@
   padding: 0;
   cursor: pointer;
   outline: inherit;
+}
+
+.header__footer_description {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.header__footer_description_name {
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+  color: var(--text-color-white);
+  letter-spacing: 5%;
+  text-align: right;
+}
+
+.header__footer_description_all {
+  font-family: var(--body-font-small);
+  font-weight: var(--font-small);
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-transparent);
+  text-align: right;
+}
+
+.header__footer_description_price {
+  font-family: var(--body-font-small);
+  font-weight: var(--font-small);
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-orange);
+  text-align: right;
 }
