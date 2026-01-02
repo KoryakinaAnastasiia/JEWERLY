@@ -52,13 +52,15 @@
 .header__name {
   font-family: var(--body-font-big);
   font-size: var(--big-font-size);
-  letter-spacing: 3%;
+  letter-spacing: 2px;
   vertical-align: middle;
+  padding-right: 60px;
 }
 
 .header__body {
   display: flex;
   justify-content: space-evenly;
+  padding-right: 11vw;
 }
 
 .header__body_text {
@@ -73,13 +75,6 @@
   gap: 38px;
 }
 
-.header__line {
-  background-color: var(--first-color);
-  width: 130px;
-  height: 1px;
-  margin-top: 8px;
-}
-
 .header__button {
   background: none;
   border: none;
@@ -87,6 +82,18 @@
   cursor: pointer;
   outline: inherit;
   font-family: var(--body-font-small);
+  position: relative;
+}
+
+.header__button::after {
+  display: block;
+  content: "";
+  width: 130px;
+  height: 1px;
+  background: var(--first-color);
+  position: absolute;
+  top: 50%;
+  left: -168px;
 }
 
 .header__footer {
