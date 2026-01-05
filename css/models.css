@@ -7,10 +7,23 @@
 
 .models__card-man {
   position: relative;
-  width: fit-content;
+  display: inline-block;
 }
 
 .models__card-woman {
   position: relative;
-  width: fit-content;
+  display: inline-block;
+}
+
+.models_section-information {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+.models__card-name {
+  font-weight: var(--font-small);
+  font-size: 24px;
+  font-family: var(--body-font-small);
+  color: var(--text-color-white);
 }
