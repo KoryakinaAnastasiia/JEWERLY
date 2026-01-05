@@ -61,18 +61,19 @@
   display: flex;
   justify-content: space-evenly;
   padding-right: 11vw;
+  gap: 94px;
 }
 
 .header__body_text {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  justify-content: center;
 }
 
 .header__text_mini {
   display: flex;
-  padding-left: 129px;
-  gap: 38px;
+  padding-left: 291px;
 }
 
 .header__button {

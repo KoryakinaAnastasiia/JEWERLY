@@ -1,0 +1,16 @@
+.models.section {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.models__card-man {
+  position: relative;
+  width: fit-content;
+}
+
+.models__card-woman {
+  position: relative;
+  width: fit-content;
+}
