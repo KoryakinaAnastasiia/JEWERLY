@@ -37,3 +37,13 @@
   font-family: var(--body-font-big);
   color: var(--text-color-white);
 }
+
+.models__card-a::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 1px;
+  background: var(--text-color-white);
+  margin-top: 23px;
+  margin-left: 30%;
+}
