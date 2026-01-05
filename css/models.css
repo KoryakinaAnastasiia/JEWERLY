@@ -18,12 +18,22 @@
 .models_section-information {
   position: absolute;
   top: 40%;
-  left: 35%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .models__card-name {
   font-weight: var(--font-small);
   font-size: 24px;
   font-family: var(--body-font-small);
+  color: var(--text-color-white);
+}
+
+.models__card-a {
+  font-weight: var(--font-regular);
+  font-size: var(--big-font-size);
+  font-family: var(--body-font-big);
   color: var(--text-color-white);
 }
