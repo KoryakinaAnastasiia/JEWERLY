@@ -8,8 +8,8 @@
   justify-content: center;
   flex-direction: column;
   background-color: var(--first-color);
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 11%;
+  padding-right: 11%;
 }
 
 .address_search_text {
@@ -30,6 +30,17 @@
 
 .address_point {
   width: 50%;
+}
+
+.adress_search-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adress_search-line {
+  background-color: transparent;
+  border: none;
 }
 
 .maps_image {
