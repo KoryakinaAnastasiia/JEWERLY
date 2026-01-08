@@ -8,6 +8,8 @@
   justify-content: center;
   flex-direction: column;
   background-color: var(--first-color);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .address_search_text {
