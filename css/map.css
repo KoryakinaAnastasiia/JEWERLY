@@ -10,6 +10,9 @@
   background-color: var(--first-color);
   padding-left: 11%;
   padding-right: 11%;
+  padding-top: 12%;
+  position: relative;
+  padding-bottom: 11.2%;
 }
 
 .address_search_text {
@@ -25,10 +28,11 @@
   font-weight: var(--font-small);
   font-size: var(--smaller-font-size);
   color: var(--text-color-white);
-  letter-spacing: ;
+  padding-top: 16px;
 }
 
 .address_point {
+  position: relative;
   width: 50%;
 }
 
@@ -37,6 +41,8 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1.8px solid var(--text-color-white);
+  padding-top: 60px;
+  padding-bottom: 10px;
 }
 
 .adress_search-line {
@@ -46,4 +52,11 @@
 
 .maps_image {
   width: 100%;
+  position: absolute;
+}
+
+.point_map {
+  position: absolute;
+  top: 149px;
+  left: 77px;
 }
