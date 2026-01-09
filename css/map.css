@@ -55,8 +55,32 @@
   position: absolute;
 }
 
-.point_map {
+.point_map1 {
   position: absolute;
   top: 149px;
   left: 77px;
+}
+
+.point_map2 {
+  position: absolute;
+  top: 172px;
+  left: 250px;
+}
+
+.point_map3 {
+  position: absolute;
+  top: 232px;
+  left: 365px;
+}
+
+.point_map4 {
+  position: absolute;
+  top: 361px;
+  left: 470px;
+}
+
+.point_map5 {
+  position: absolute;
+  top: 412px;
+  left: 258px;
 }
