@@ -1,0 +1,14 @@
+.container.section {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  gap: 20px;
+  height: 820px;
+}
+
+.container_ring1,
+.container_ring2,
+.container_earrings1,
+.container_earrings2 {
+  background-color: #ededed;
+}

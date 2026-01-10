@@ -1,10 +1,10 @@
 .maps.section {
   display: flex;
+  min-height: 604px;
 }
 
 .address_search {
   display: flex;
-  width: 50%;
   justify-content: center;
   flex-direction: column;
   background-color: var(--first-color);
@@ -33,7 +33,7 @@
 
 .address_point {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .adress_search-container {
