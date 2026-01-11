@@ -12,7 +12,8 @@
   background-color: #ededed;
 }
 
-.container_ring {
+.container_ring,
+.container_earrings {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -24,12 +25,25 @@
   padding-right: 70px;
 }
 
+.container_ring1-description,
+.container_ring2-description {
+  padding-top: 67px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.container_ring2-img {
+  padding-top: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .container_earrings1-img {
   padding-left: 40px;
   padding-right: 40px;
   margin-top: -20px;
   overflow: hidden;
-}
-
-.container_earrings {
 }
