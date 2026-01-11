@@ -33,7 +33,7 @@
 
 .address_point {
   position: relative;
-  width: 100%;
+  min-width: 50%;
 }
 
 .adress_search-container {

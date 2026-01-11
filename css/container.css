@@ -1,7 +1,6 @@
 .container.section {
   padding-top: 20px;
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
+  display: flex;
   gap: 20px;
   height: 820px;
 }
@@ -11,4 +10,26 @@
 .container_earrings1,
 .container_earrings2 {
   background-color: #ededed;
+}
+
+.container_ring {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container_ring1-img {
+  padding-top: 47px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.container_earrings1-img {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: -20px;
+  overflow: hidden;
+}
+
+.container_earrings {
 }
