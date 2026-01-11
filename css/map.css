@@ -13,6 +13,7 @@
   padding-top: 12%;
   position: relative;
   padding-bottom: 11.2%;
+  max-width: 710px;
 }
 
 .address_search_text {
