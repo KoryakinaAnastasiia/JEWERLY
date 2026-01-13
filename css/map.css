@@ -34,7 +34,8 @@
 
 .address_point {
   position: relative;
-  min-width: 50%;
+  flex: 1 1 calc(50% + 21px);
+  background-color: var(--first-color);
 }
 
 .adress_search-container {
@@ -52,22 +53,26 @@
 }
 
 .maps_image {
-  width: 100%;
   position: absolute;
+  height: 100%;
+  width: auto;
+  aspect-ratio: 740/604;
+  object-fit: cover;
 }
 
 .point_map1 {
   position: absolute;
-  top: 149px;
-  left: 77px;
+  top: 18%;
+  left: 7%;
 }
 
 .image-container .point_map-overlay {
-  top: 149px;
-  left: 77px;
-  transform: none;
   width: 100%;
   height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
 .image-container:hover .point_map1 {

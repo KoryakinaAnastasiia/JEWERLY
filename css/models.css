@@ -2,7 +2,8 @@
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 21px;
 }
 
 .models__card-man {
@@ -17,11 +18,13 @@
 
 .models_section-information {
   position: absolute;
-  top: 40%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  z-index: 2;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .models__card-name {
