@@ -7,18 +7,25 @@
 }
 
 .container_ring1,
-.container_ring2,
+.container_ring2 {
+  background-color: #ededed;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .container_earrings1,
 .container_earrings2 {
   background-color: #ededed;
   width: 100%;
   max-width: 400px;
   height: auto;
-  aspect-ratio: 1/1;
-  padding: 20px 30px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  padding-top: -10px;
 }
 
 .container_ring,
@@ -36,7 +43,6 @@
 
 .container_ring1-description,
 .container_ring2-description {
-  padding-top: 67px;
   padding-left: 30px;
   padding-bottom: 20px;
   display: flex;
@@ -85,4 +91,24 @@
 
 .container_earrings2-img {
   margin-top: -9px;
+}
+
+.container_ring1-description-name,
+.container_ring2-description-name,
+.container_earrings1-description-name,
+.container_earrings2-description-name {
+  font-family: var(--body-font-small);
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+}
+
+.container_ring1-description-p,
+.container_ring2-description-p,
+.container_earrings1-description-p,
+.container_earrings2-description-name {
+  font-family: var(--body-font-small);
+  font-weight: var(--font-small);
+  font-size: var(--smaller-font-size);
+  color: var(--first-color);
 }
