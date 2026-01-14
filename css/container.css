@@ -11,6 +11,14 @@
 .container_earrings1,
 .container_earrings2 {
   background-color: #ededed;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1/1;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .container_ring,
@@ -59,8 +67,11 @@
 }
 
 .container_earrings2-img {
-  padding-left: 43px;
-  padding-right: 43px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 340/234;
+  object-fit: cover;
+  object-position: center;
 }
 
 .container_earrings2-description {
