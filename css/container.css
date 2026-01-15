@@ -2,7 +2,6 @@
   padding-top: 20px;
   display: flex;
   gap: 20px;
-  height: 820px;
   justify-content: center;
 }
 
@@ -10,29 +9,33 @@
 .container_ring2 {
   background-color: #ededed;
   width: 100%;
-  max-width: 400px;
-  height: auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 67px;
 }
 
 .container_earrings1,
 .container_earrings2 {
   background-color: #ededed;
   width: 100%;
-  max-width: 400px;
-  height: auto;
   display: flex;
   flex-direction: column;
-  padding-top: -10px;
 }
 
-.container_ring,
+.container_ring {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .container_earrings {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.container_necklaces-img {
+  height: 100%;
 }
 
 .container_ring1-img {
@@ -41,14 +44,12 @@
   padding-right: 70px;
 }
 
-.container_ring1-description,
-.container_ring2-description {
+.container_ring1-description {
   padding-left: 30px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 9px;
-  padding-top: 27px;
 }
 
 .container_ring2-img {
@@ -57,43 +58,21 @@
   padding-right: 70px;
 }
 
-.container_earrings1-img {
+.container_ring2-description {
+  padding-left: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.container_earrings1 {
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.container_earrings1-img {
   margin-top: -20px;
-  overflow: hidden;
-}
-
-.container_earrings1-description {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  margin-top: -15px;
-  padding-left: 30px;
-  padding-bottom: 20px;
-}
-
-.container_earrings2-img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 340/234;
-  object-fit: cover;
-  object-position: center;
-}
-
-.container_earrings2-description {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  margin-top: -10px;
-  padding-left: 30px;
-  padding-bottom: 20px;
-  padding-top: 60px;
-}
-
-.container_earrings2-img {
-  margin-top: -9px;
-  padding-top: 60px;
 }
 
 .container_ring1-description-name,
