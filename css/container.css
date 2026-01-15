@@ -75,6 +75,14 @@
   margin-top: -20px;
 }
 
+.container_earrings1-description {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-bottom: 20px;
+}
+
 .container_ring1-description-name,
 .container_ring2-description-name,
 .container_earrings1-description-name,
