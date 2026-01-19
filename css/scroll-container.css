@@ -1,0 +1,24 @@
+.scroll.section {
+  margin-top: 20px;
+  background-color: var(--first-color);
+}
+
+.scroll_section_title {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font-big);
+  font-weight: var(--font-regular);
+  color: var(--text-color-white);
+  letter-spacing: 3px;
+  vertical-align: middle;
+
+  padding-top: 100px;
+  padding-left: 162px;
+}
+
+.scroll_imgs {
+  display: grid;
+  grid-auto-flow: column; /* Автоматически добавлять колонки вправо */
+  grid-auto-columns: 25%; /* Каждая колонка занимает 80% ширины */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
