@@ -16,6 +16,7 @@
 }
 
 .scroll_imgs {
+  padding-top: 80px;
   display: grid;
   grid-auto-flow: column; /* Автоматически добавлять колонки вправо */
   grid-auto-columns: 25%; /* Каждая колонка занимает 80% ширины */
