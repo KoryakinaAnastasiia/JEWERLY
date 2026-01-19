@@ -7,6 +7,8 @@
   max-width: 1440px;
 }
 
+.container_ring1-img,
+.container_ring2-img,
 .container_earrings1-img,
 .container_earrings2-img {
   flex: 1 1 314px;
@@ -71,10 +73,6 @@
   height: auto;
   aspect-ratio: 1/1;
   overflow: hidden;
-}
-
-.container_earrings1-img {
-  margin-top: -20px;
 }
 
 .container_earrings1-description {
