@@ -36,3 +36,19 @@
   object-fit: contain;
   display: block;
 }
+
+.scroll_footer {
+  display: flex;
+  padding: 80px 162px 100px 162px;
+  justify-content: space-between;
+}
+
+.scroll_footer-button {
+  display: flex;
+  gap: 20px;
+}
+
+.scroll_footer-switch {
+  display: flex;
+  gap: 233px;
+}
