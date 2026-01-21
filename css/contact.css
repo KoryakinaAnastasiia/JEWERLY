@@ -1,2 +1,11 @@
 .contact.section {
+  display: flex;
+}
+
+.contact_img {
+  flex: 1 1 50%;
+}
+
+.contact_info {
+  flex: 1 1 calc(50% + 21px);
 }
