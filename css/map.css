@@ -28,8 +28,8 @@
   font-family: var(--body-font-small);
   font-weight: var(--font-small);
   font-size: var(--smaller-font-size);
-  color: var(--text-color-white);
-  padding-top: 16px;
+  color: #ffffff;
+  padding-top: 18px;
 }
 
 .address_point {
