@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/container.css" />
     <link rel="stylesheet" href="./css/scroll-container.css" />
     <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
     <title>JEWERLY</title>
   </head>
@@ -257,20 +258,63 @@
         <img src="/JEWERLY/img/girl-blue.png" alt="image" />
       </div>
       <div class="contact_info">
-        <p class="contact_info-title">телефон флагманского магазина</p>
-        <p class="phone">+7 800 456 456</p>
+        <div class="contact_phone">
+          <p class="contact_info-title">телефон флагманского магазина</p>
+          <p class="phone">+7 800 456 456</p>
+        </div>
         <div class="contact_emale">
           <p class="contact_emale-title">подпишитесь на новости</p>
           <div class="contact_emale-search">
-            <form class="adress_search-container">
+            <form class="contact_search-container">
               <input
-                class="adress_search-line"
+                class="contact_search-line"
                 type="search"
-                placeholder="Введите адрес"
+                placeholder="Введите E-mail"
                 aria-label="Поиск по сайту"
               />
-              <button type="submit">
-                <img src="./img/Line.png" alt="image" />
+              <button class="contact_search-arrow" type="submit">
+                <img src="./img/Line-black.png" alt="image" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==================== FOOTER ====================-->
+    <section class="footer section" id="contact">
+      <div class="footer__description">
+        <a href="#section">работа в компании</a>
+        <a href="#section">условия пользования</a>
+        <a href="#section">выходные данные</a>
+        <a href="#section">политика конфиденциальности</a>
+        <a href="#section">карта сайта</a>
+      </div>
+      <div class="footer__description2">
+        <img src="./img/footer-img.svg" alt="" />
+        <div class="footer__contact">
+          <div class="footer__contact-phone">
+            <p class="footer-phone-title">телефон горячей линии</p>
+            <p class="footer-phone">+7 800 456 456</p>
+            <div class="footer-button">
+              <a href="https://facebook.com" class="img-link">
+                <img src="/JEWERLY/img/Facebook.png" alt="Facebook"
+              /></a>
+              <a href="https://x.com/" class="img-link">
+                <img src="/JEWERLY/img/Instagram.png" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+          <div class="footer__contact-email">
+            <p class="footer-email-title">подпишитесь на новости</p>
+            <form class="contact_search-container">
+              <input
+                class="contact_search-line"
+                type="search"
+                placeholder="Введите E-mail"
+                aria-label="Поиск по сайту"
+              />
+              <button class="contact_search-arrow" type="submit">
+                <img src="./img/Line-black.png" alt="image" />
               </button>
             </form>
           </div>

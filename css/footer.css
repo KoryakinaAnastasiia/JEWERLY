@@ -1,0 +1,12 @@
+.footer.section {
+  background-color: var(--first-color);
+  padding: 80px 162px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.footer__description {
+  text-decoration: none;
+  color: var(--text-color-white);
+}

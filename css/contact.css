@@ -4,8 +4,68 @@
 
 .contact_img {
   flex: 1 1 50%;
+  display: flex;
+  justify-content: end;
 }
 
 .contact_info {
   flex: 1 1 calc(50% + 21px);
+  padding: 180px 183px 180px 208px;
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+}
+
+.contact_phone {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact_info-title,
+.contact_emale-title {
+  font-weight: var(--font-regular);
+  font-family: var(--body-font-big);
+  font-size: var(--smaller-font-size);
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--first-color);
+}
+
+.phone {
+  font-weight: var(--font-small);
+  font-family: var(--body-font-big);
+  font-size: var(--transparent-font-size);
+  line-height: 1;
+  vertical-align: middle;
+  color: var(--text-color-transparent);
+}
+
+.contact_emale {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact_search-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.8px solid var(--first-color);
+  max-width: 280px;
+  padding-bottom: 8px;
+}
+
+.contact_search-line {
+  background-color: transparent;
+  border: none;
+}
+
+.contact_search-line[type="search"]::placeholder {
+  color: var(--text-color-transparent);
+  font-weight: var(--font-small);
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 22px;
 }
