@@ -44,6 +44,7 @@
   background-color: var(--first-color);
   padding-top: 70px;
   padding-left: 163px;
+  padding-bottom: 70px;
   display: flex;
   gap: 100px;
 }
@@ -76,4 +77,13 @@
   font-size: var(--small-font-size);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.hamburger-choice-elements-all {
+  text-decoration: none;
+  color: var(--text-color-orange);
+  font-weight: 400;
+  font-family: var(--body-font-big);
+  font-size: var(--smaller-font-size);
+  letter-spacing: 0.06em;
 }
