@@ -15,3 +15,63 @@
   display: flex;
   gap: 40px;
 }
+
+.hamburger-menu-collection {
+  padding: 27px 193px 0px 163px;
+  background: #2f2f2f;
+  display: flex;
+  gap: 50px;
+}
+
+.hamburger-menu-collection-button {
+  color: var(--text-color-white);
+  font-weight: 450;
+  font-family: var(--body-font-big);
+  font-size: var(--small-font-size);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid transparent; /* Прозрачная линия заранее */
+  transition: border-color 0.3s;
+  padding-bottom: 27px;
+}
+
+.hamburger-menu-collection-button:hover {
+  border-bottom: 1.8px solid #ffffff;
+}
+
+.hamburger-choice {
+  background-color: var(--first-color);
+  padding-top: 70px;
+  padding-left: 163px;
+  display: flex;
+  gap: 100px;
+}
+
+.hamburger-choice-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-choice-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+.hhamburger-choice-elements-a {
+  text-decoration: none;
+  color: var(--text-color-white);
+  font-weight: var(--font-regular);
+  font-family: var(--body-font-big);
+  font-size: var(--smaller-font-size);
+  letter-spacing: 0.06em;
+}
+
+.hamburger-choice-title {
+  color: var(--text-color-white);
+  font-weight: 600;
+  font-family: var(--body-font-big);
+  font-size: var(--small-font-size);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
