@@ -87,3 +87,16 @@
   font-size: var(--smaller-font-size);
   letter-spacing: 0.06em;
 }
+
+.hamburger-menu.section {
+  position: fixed;
+  top: 0px;
+  right: -100%; /* Прячем меню за экран справа */
+  width: 100%;
+  transition: 0.4s ease; /* Плавность движения */
+}
+
+/* Класс, который будет добавлять JS */
+.hamburger-menu.section.active {
+  right: 0; /* Выезжает на экран */
+}
