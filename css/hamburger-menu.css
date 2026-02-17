@@ -91,12 +91,14 @@
 .hamburger-menu.section {
   position: fixed;
   top: 0px;
-  top: -100%; /* Полностью прячет блок вверх */
+  transform: translateY(
+    -100%
+  ); /* Полностью прячет блок вверх без сдвига экрана */
   width: 100%;
   transition: 0.4s ease; /* Плавность движения */
 }
 
 /* Класс, который будет добавлять JS */
 .hamburger-menu.section.active {
-  top: 0; /* Выезжает на экран */
+  transform: translateY(0);
 }

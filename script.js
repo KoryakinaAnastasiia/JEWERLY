@@ -11,3 +11,14 @@ btn.addEventListener("click", () => {
 btnclose.addEventListener("click", () => {
   menu.classList.remove("active");
 });
+
+const buttons = document.querySelectorAll(".header__footer_lang_button");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    // Удаляем класс active у всех кнопок
+    buttons.forEach((b) => b.classList.remove("active"));
+    // Добавляем класс только нажатой
+    this.classList.add("active");
+  });
+});
