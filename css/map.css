@@ -110,6 +110,13 @@
   text-align: justify;
   text-align-last: justify;
   padding: 10px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.street.show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .point_map {

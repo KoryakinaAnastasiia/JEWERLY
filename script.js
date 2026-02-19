@@ -30,7 +30,7 @@ buttons.forEach((btn) => {
 const street_name = document.getElementById("str");
 const point_m = document.getElementById("point_map");
 
-point_map.addEventListener("click", () => {
-  // Переключаем класс 'active' у меню
-  menu.classList.toggle("active");
+point_m.addEventListener("click", () => {
+  // toggle включает класс, если его нет, и выключает, если он есть
+  street_name.classList.toggle("show");
 });
