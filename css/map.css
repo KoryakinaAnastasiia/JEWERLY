@@ -102,6 +102,16 @@
   display: inline-block;
 }
 
+.street {
+  position: absolute;
+  top: -70px;
+  left: 60px;
+  background: #67676794;
+  text-align: justify;
+  text-align-last: justify;
+  padding: 10px;
+}
+
 .point_map {
   width: 100%;
   display: block;
