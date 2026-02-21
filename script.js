@@ -27,12 +27,16 @@ buttons.forEach((btn) => {
 
 //street
 
-const street_name = document.getElementById("str");
-const point_m = document.getElementById("point_map");
+const buttons_street = document.querySelectorAll(".address_point button");
 
-point_m.addEventListener("click", () => {
-  // toggle включает класс, если его нет, и выключает, если он есть
-  street_name.classList.toggle("show");
+buttons_street.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Находим внутри нажатой кнопки элемент с классом .street
+    const streetLabel = btn.querySelector(".street");
+
+    // Переключаем класс именно у этой надписи
+    streetLabel.classList.toggle("show");
+  });
 });
 
 //scroll
