@@ -30,12 +30,14 @@ buttons.forEach((btn) => {
 const buttons_street = document.querySelectorAll(".address_point button");
 
 buttons_street.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    // Находим внутри нажатой кнопки элемент с классом .street
+  btn.addEventListener("mouseenter", () => {
     const streetLabel = btn.querySelector(".street");
-
-    // Переключаем класс именно у этой надписи
     streetLabel.classList.toggle("show");
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    const streetLabel = btn.querySelector(".street");
+    streetLabel.classList.remove("show");
   });
 });
 

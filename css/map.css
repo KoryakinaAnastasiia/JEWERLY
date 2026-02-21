@@ -107,11 +107,13 @@
   top: -70px;
   left: 60px;
   background: #67676794;
-  text-align: justify;
-  text-align-last: justify;
+  white-space: nowrap;
   padding: 10px;
   opacity: 0;
   pointer-events: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .street.show {
