@@ -15,7 +15,7 @@ btnclose.addEventListener("click", () => {
 //language
 
 const buttons = document.querySelectorAll(".header__footer_lang_button");
-
+//сделать для RU сразу эктив
 buttons.forEach((btn) => {
   btn.addEventListener("click", function () {
     // Удаляем класс active у всех кнопок
@@ -27,38 +27,54 @@ buttons.forEach((btn) => {
 
 //street
 
-const buttons_street = document.querySelectorAll(".address_point button");
+// const buttons_street = document.querySelectorAll(".address_point button");
 
-buttons_street.forEach((btn) => {
-  btn.addEventListener("mouseenter", () => {
-    const streetLabel = btn.querySelector(".street");
-    streetLabel.classList.toggle("show");
-  });
+// buttons_street.forEach((btn) => {
+//   btn.addEventListener("mouseenter", () => {
+//     const streetLabel = btn.querySelector(".street");
+//     streetLabel.classList.toggle("show");
+//   });
 
-  btn.addEventListener("mouseleave", () => {
-    const streetLabel = btn.querySelector(".street");
-    streetLabel.classList.remove("show");
-  });
-});
+//   btn.addEventListener("mouseleave", () => {
+//     const streetLabel = btn.querySelector(".street");
+//     streetLabel.classList.remove("show");
+//   });
+// });
 
 //scroll
 
 const container = document.querySelector(".scroll_imgs");
 const btnNext = document.querySelector(".scroll_footer-arrow-right");
 const btnPrev = document.querySelector(".scroll_footer-arrow-left");
+let currentIndex = 0;
+
+const imgs = container.querySelectorAll("img");
 
 // Прокрутка вправо
 btnNext.addEventListener("click", () => {
-  container.scrollBy({
-    left: 300, // Расстояние прокрутки в пикселях
-    behavior: "smooth", // Плавная анимация
+  if (currentIndex >= 7) {
+    return;
+  }
+  currentIndex = currentIndex + 1;
+  imgs[currentIndex].scrollIntoView({
+    behavior: "smooth",
+    inline: "center",
+    block: "nearest",
   });
 });
 
 // Прокрутка влево
 btnPrev.addEventListener("click", () => {
-  container.scrollBy({
-    left: -300, // Отрицательное значение для прокрутки назад
+  if (currentIndex <= 0) {
+    return;
+  }
+  currentIndex = currentIndex - 1;
+  imgs[currentIndex].scrollIntoView({
     behavior: "smooth",
+    inline: "center",
+    block: "nearest",
   });
 });
+
+//1)точки переключались на статус activ при прокрутке 2) при нажатии на кнопку появлялась та картинка индекса
+//точки[currentIndex].classList.remowe"active"   data-index получить у батона

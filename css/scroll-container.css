@@ -16,18 +16,21 @@
 }
 
 .scroll_imgs {
-  display: grid;
-  grid-auto-rows: 100%;
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
+  display: flex;
   gap: 40px;
-  overflow-x: auto;
+  overflow-x: hidden;
   margin-top: 80px;
   height: 385px;
+  overscroll-behavior-y: contain;
 }
 
-.scroll_imgs img:first-child {
-  margin-right: 0;
+.first-img {
+  flex-shrink: 0;
+  padding-left: calc(50vw - 130px);
+}
+
+.last-img {
+  margin-right: calc(50vw - 192px);
 }
 
 .scroll_imgs img {

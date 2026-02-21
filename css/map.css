@@ -68,38 +68,28 @@
   opacity: 0;
 }
 
-.image-container {
-  position: relative;
+.container1 {
   top: 15%;
   left: 11%;
-  display: inline-block;
 }
 
-.image-container2 {
-  position: relative;
+.container2 {
   top: 20%;
   left: 32%;
-  display: inline-block;
 }
 
-.image-container3 {
-  position: relative;
+.container3 {
   top: 29%;
   left: 37%;
-  display: inline-block;
 }
 
-.image-container4 {
-  position: relative;
+.container4 {
   top: 60%;
   left: 39%;
-  display: inline-block;
 }
 
-.image-container5 {
-  position: relative;
+.container5 {
   top: 70%;
-  display: inline-block;
 }
 
 .street {
@@ -114,9 +104,15 @@
   color: #ffffff;
   font-size: 18px;
   font-weight: 300;
+  transition: opacity 0.3s;
 }
 
-.street.show {
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container:hover .street {
   opacity: 1;
   pointer-events: auto;
 }
