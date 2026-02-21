@@ -34,3 +34,25 @@ point_m.addEventListener("click", () => {
   // toggle включает класс, если его нет, и выключает, если он есть
   street_name.classList.toggle("show");
 });
+
+//scroll
+
+const container = document.querySelector(".scroll_imgs");
+const btnNext = document.querySelector(".scroll_footer-arrow-right");
+const btnPrev = document.querySelector(".scroll_footer-arrow-left");
+
+// Прокрутка вправо
+btnNext.addEventListener("click", () => {
+  container.scrollBy({
+    left: 300, // Расстояние прокрутки в пикселях
+    behavior: "smooth", // Плавная анимация
+  });
+});
+
+// Прокрутка влево
+btnPrev.addEventListener("click", () => {
+  container.scrollBy({
+    left: -300, // Отрицательное значение для прокрутки назад
+    behavior: "smooth",
+  });
+});
