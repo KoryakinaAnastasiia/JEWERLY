@@ -50,6 +50,22 @@ let currentIndex = 0;
 
 const imgs = container.querySelectorAll("img");
 
+function updateSlider(index) {
+  currentIndex = index;
+
+  // 1. Скроллим к нужной картинке
+  imgs[currentIndex].scrollIntoView({
+    behavior: "smooth",
+    inline: "center",
+    block: "nearest",
+  });
+
+  // 2. Обновляем активную точку
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === currentIndex);
+  });
+}
+
 // Прокрутка вправо
 btnNext.addEventListener("click", () => {
   if (currentIndex >= 7) {
@@ -73,6 +89,18 @@ btnPrev.addEventListener("click", () => {
     behavior: "smooth",
     inline: "center",
     block: "nearest",
+  });
+});
+
+//кнопки картинок
+
+const dot = document.querySelector(".buttons__dots");
+const dots = dot.querySelectorAll(".button__dot");
+let index = 0;
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    updateSlider(index);
   });
 });
 

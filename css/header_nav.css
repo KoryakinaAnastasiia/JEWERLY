@@ -55,6 +55,7 @@
   letter-spacing: 2px;
   vertical-align: middle;
   padding-right: 60px;
+  white-space: nowrap;
 }
 
 .header__body {

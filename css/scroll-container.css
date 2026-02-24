@@ -44,6 +44,7 @@
   display: flex;
   padding: 80px 162px 100px 162px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .scroll_footer-button {
@@ -53,5 +54,18 @@
 
 .scroll_footer-switch {
   display: flex;
-  gap: 233px;
+  gap: 50px;
+}
+
+.buttons__dots {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+.button__dot {
+  width: 8px;
+  height: 8px;
+  background-color: #656565;
+  border-radius: 50%;
 }
