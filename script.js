@@ -46,63 +46,46 @@ buttons.forEach((btn) => {
 const container = document.querySelector(".scroll_imgs");
 const btnNext = document.querySelector(".scroll_footer-arrow-right");
 const btnPrev = document.querySelector(".scroll_footer-arrow-left");
+const imgs = container.querySelectorAll("img");
+const dots = document.querySelectorAll(".button__dot");
+
 let currentIndex = 0;
 
-const imgs = container.querySelectorAll("img");
-
+// ОДНА функция для всех изменений
 function updateSlider(index) {
   currentIndex = index;
 
-  // 1. Скроллим к нужной картинке
+  // Скроллим к картинке
   imgs[currentIndex].scrollIntoView({
     behavior: "smooth",
     inline: "center",
     block: "nearest",
   });
 
-  // 2. Обновляем активную точку
+  // Меняем цвет точек (добавляем класс active)
   dots.forEach((dot, i) => {
     dot.classList.toggle("active", i === currentIndex);
   });
 }
 
-// Прокрутка вправо
-btnNext.addEventListener("click", () => {
-  if (currentIndex >= 7) {
-    return;
-  }
-  currentIndex = currentIndex + 1;
-  imgs[currentIndex].scrollIntoView({
-    behavior: "smooth",
-    inline: "center",
-    block: "nearest",
-  });
-});
-
-// Прокрутка влево
-btnPrev.addEventListener("click", () => {
-  if (currentIndex <= 0) {
-    return;
-  }
-  currentIndex = currentIndex - 1;
-  imgs[currentIndex].scrollIntoView({
-    behavior: "smooth",
-    inline: "center",
-    block: "nearest",
-  });
-});
-
-//кнопки картинок
-
-const dot = document.querySelector(".buttons__dots");
-const dots = dot.querySelectorAll(".button__dot");
-let index = 0;
-
+// Клик по точкам
 dots.forEach((dot, index) => {
   dot.addEventListener("click", () => {
     updateSlider(index);
   });
 });
 
-//1)точки переключались на статус activ при прокрутке 2) при нажатии на кнопку появлялась та картинка индекса
-//точки[currentIndex].classList.remowe"active"   data-index получить у батона
+// Прокрутка вправо
+btnNext.addEventListener("click", () => {
+  if (currentIndex < imgs.length - 1) {
+    // проверка по количеству картинок
+    updateSlider(currentIndex + 1);
+  }
+});
+
+// Прокрутка влево
+btnPrev.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    updateSlider(currentIndex - 1);
+  }
+});
