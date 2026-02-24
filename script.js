@@ -77,7 +77,7 @@ dots.forEach((dot, index) => {
 
 // Прокрутка вправо
 btnNext.addEventListener("click", () => {
-  if (currentIndex < imgs.length - 1) {
+  if (currentIndex <= 7) {
     // проверка по количеству картинок
     updateSlider(currentIndex + 1);
   }
@@ -85,7 +85,7 @@ btnNext.addEventListener("click", () => {
 
 // Прокрутка влево
 btnPrev.addEventListener("click", () => {
-  if (currentIndex > 0) {
+  if (currentIndex >= 0) {
     updateSlider(currentIndex - 1);
   }
 });
