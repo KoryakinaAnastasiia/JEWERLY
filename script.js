@@ -62,7 +62,7 @@ function updateSlider(index) {
     block: "nearest",
   });
 
-  // Меняем цвет точек (добавляем класс active)
+  // Меняем цвет точек
   dots.forEach((dot, i) => {
     dot.classList.toggle("active", i === currentIndex);
   });
