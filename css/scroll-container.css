@@ -69,3 +69,8 @@
   background-color: #656565;
   border-radius: 50%;
 }
+
+.button__dot.active {
+  border: 1.8px solid #ffffff;
+  background-color: #ffffff;
+}
