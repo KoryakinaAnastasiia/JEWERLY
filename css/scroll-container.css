@@ -73,4 +73,5 @@
 .button__dot.active {
   border: 1.8px solid #ffffff;
   background-color: #ffffff;
+  transform: scale(1.2);
 }

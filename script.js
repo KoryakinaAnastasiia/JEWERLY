@@ -50,8 +50,11 @@ const imgs = container.querySelectorAll("img");
 const dots = document.querySelectorAll(".button__dot");
 
 let currentIndex = 0;
+const firstDot = dots[0];
 
-// ОДНА функция для всех изменений
+firstDot.classList.add("active");
+
+//функция для всех изменений
 function updateSlider(index) {
   currentIndex = index;
 
@@ -64,7 +67,12 @@ function updateSlider(index) {
 
   // Меняем цвет точек
   dots.forEach((dot, i) => {
-    dot.classList.toggle("active", i === currentIndex);
+    i === 0;
+    if (i === currentIndex) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
   });
 }
 
