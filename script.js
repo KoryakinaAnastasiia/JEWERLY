@@ -98,14 +98,35 @@ btnPrev.addEventListener("click", () => {
   }
 });
 
-// button email
+// button email map
 
-const form = document.querySelector(".adress_search-container");
+const formMap = document.querySelector(".adress_search-container");
 const text = document.querySelector(".adress_search-line");
-const conclusion = form.querySelector("button");
 
-form.addEventListener("submit", (event) => {
+formMap.addEventListener("submit", (event) => {
   event.preventDefault();
   const message = text.value.trim(); // trim() убирает случайные пробелы по бокам
   alert(message);
+});
+
+// button email contact
+
+const formContact = document.querySelector(".contact_search-container");
+const textContact = document.querySelector(".contact_search-line");
+
+formContact.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const messageContact = textContact.value.trim(); // trim() убирает случайные пробелы по бокам
+  alert(messageContact);
+});
+
+// button email footer
+
+const formFooter = document.querySelector(".footer_search");
+const textFooter = document.querySelector(".footer_search-line");
+
+formFooter.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const messageFooter = textFooter.value.trim(); // trim() убирает случайные пробелы по бокам
+  alert(messageFooter);
 });
