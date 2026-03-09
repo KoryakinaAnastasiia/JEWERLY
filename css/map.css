@@ -16,6 +16,10 @@
   flex: 1 1 50%;
 }
 
+.adress_search-line {
+  color: var(--text-color-white);
+}
+
 .address_search_text {
   font-family: var(--body-font-big);
   font-weight: var(--font-regular);

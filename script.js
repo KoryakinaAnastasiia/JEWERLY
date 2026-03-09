@@ -101,9 +101,13 @@ btnPrev.addEventListener("click", () => {
 //scroll button email
 
 const form = document.querySelector(".adress_search-container");
+const text = document.querySelector(".adress_search-line");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  // Код подготовки данных
-  // и их отправка на сервер
+});
+
+const conclusion = form.querySelector("button");
+conclusion.addEventListener("click", () => {
+  alert(text.value);
 });
