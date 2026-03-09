@@ -109,5 +109,6 @@ form.addEventListener("submit", (event) => {
 
 const conclusion = form.querySelector("button");
 conclusion.addEventListener("click", () => {
-  alert(text.value);
+  const message = text.value.trim(); // trim() убирает случайные пробелы по бокам
+  alert(message);
 });
