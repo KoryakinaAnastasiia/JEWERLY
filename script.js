@@ -98,17 +98,14 @@ btnPrev.addEventListener("click", () => {
   }
 });
 
-//scroll button email
+// button email
 
 const form = document.querySelector(".adress_search-container");
 const text = document.querySelector(".adress_search-line");
+const conclusion = form.querySelector("button");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-});
-
-const conclusion = form.querySelector("button");
-conclusion.addEventListener("click", () => {
   const message = text.value.trim(); // trim() убирает случайные пробелы по бокам
   alert(message);
 });
