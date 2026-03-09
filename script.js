@@ -85,7 +85,7 @@ dots.forEach((dot, index) => {
 
 // Прокрутка вправо
 btnNext.addEventListener("click", () => {
-  if (currentIndex <= 7) {
+  if (currentIndex < 6) {
     // проверка по количеству картинок
     updateSlider(currentIndex + 1);
   }
@@ -93,7 +93,17 @@ btnNext.addEventListener("click", () => {
 
 // Прокрутка влево
 btnPrev.addEventListener("click", () => {
-  if (currentIndex >= 0) {
+  if (currentIndex > 0) {
     updateSlider(currentIndex - 1);
   }
+});
+
+//scroll button email
+
+const form = document.querySelector(".adress_search-container");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // Код подготовки данных
+  // и их отправка на сервер
 });
