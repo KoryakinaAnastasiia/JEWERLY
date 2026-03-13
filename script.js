@@ -98,35 +98,13 @@ btnPrev.addEventListener("click", () => {
   }
 });
 
-// button email map
-
-const formMap = document.querySelector(".adress_search-container");
-const text = document.querySelector(".adress_search-line");
-
-formMap.addEventListener("submit", (event) => {
+function onFormSubmit(event) {
   event.preventDefault();
-  const message = text.value.trim(); // trim() убирает случайные пробелы по бокам
-  alert(message);
-});
+  const formData = new FormData(event.target);
+  alert(formData.get("email"));
+}
 
-// button email contact
-
-const formContact = document.querySelector(".contact_search-container");
-const textContact = document.querySelector(".contact_search-line");
-
-formContact.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const messageContact = textContact.value.trim(); // trim() убирает случайные пробелы по бокам
-  alert(messageContact);
-});
-
-// button email footer
-
-const formFooter = document.querySelector(".footer_search");
-const textFooter = document.querySelector(".footer_search-line");
-
-formFooter.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const messageFooter = textFooter.value.trim(); // trim() убирает случайные пробелы по бокам
-  alert(messageFooter);
+const forms = document.querySelectorAll("form");
+forms.forEach((form) => {
+  form.addEventListener("submit", onFormSubmit);
 });
